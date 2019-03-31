@@ -1,6 +1,6 @@
 {
   "name": "rt-slide",
-  "version": "0.0.2-alpha.2",
+  "version": "0.0.2",
   "description": "react slide component",
   "main": "dist/umd/index.js",
   "scripts": {
