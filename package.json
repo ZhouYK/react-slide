@@ -2,11 +2,14 @@
   "name": "rt-slide",
   "version": "0.0.2-alpha.0",
   "description": "react slide component",
-  "main": "dist/index.js",
+  "main": "dist/umd/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config webpack.dev.config.js",
-    "build": "webpack --config webpack.config.js"
+    "build": "npm run es && npm run cj && npm run umd",
+    "umd": "webpack --config webpack.config.js",
+    "es": "babel src --out-dir dist/es && cp src/index.less dist/es",
+    "cj": "NODE_ENV=cj babel src --out-dir dist/cj && cp src/index.less dist/cj"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,7 @@
   },
   "homepage": "https://github.com/ZhouYK/react-slide#readme",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
@@ -45,7 +49,9 @@
   },
   "files": [
     "src",
-    "dist/index.js",
+    "dist/es",
+    "dist/cj",
+    "dist/umd",
     "package.json"
   ]
 }
