@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import Slide from '../src';
 import './index.less';
-const SlideItem = Slide.SlideItem;
+const SlideItem = Slide.Item;
 
 const Example = (props) => {
   const style = {

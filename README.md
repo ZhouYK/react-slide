@@ -1,4 +1,4 @@
-# react-slide
+# rt-slide
 
 ## Slide
 
@@ -47,3 +47,13 @@
         </div>
 ```
 <strong> Slide的宽度和高度由包裹它的元素决定，所以请对其包裹元素设置适当的宽高</strong>
+
+## Slide.Item
+
+| 属性名 | 类型 | 默认值 | 作用说明
+| :---- | :---- | :---- | :---- |
+| classNames | string | 无 | 自定义类名
+| style | object | 无 | 自定义行内样式
+| width | number | 继承Slide的宽度，单位px | 设置Slide.Item的宽度
+| height | number | 继承Slide的高度，单位px | 设置Slide.Item的高度
+| children | any或React.node | 无 | 渲染的内容

@@ -490,7 +490,7 @@ class SlideItem extends Component {
   }
 }
 
-Slide.SlideItem = SlideItem;
+Slide.Item = SlideItem;
 
 export default Slide;
 
